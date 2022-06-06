@@ -19,7 +19,6 @@ public class BooksController {
 	BooksService booksService;
 
 	
-
 	@GetMapping("/api/{bookid}")
 	private Books getBooks(@PathVariable("bookid") int bookid) {
 		return booksService.getBooksById(bookid);
